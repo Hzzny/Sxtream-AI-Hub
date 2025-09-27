@@ -1,0 +1,60 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sxtream AI Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>✨Sxtream AI Hub✨</h1>
+  <p class="sub">One For All✨</p>
+
+  <div class="card">
+    <select id="feature" onchange="toggleInputs()">
+      <option value="">Pilih Fitur…</option>
+      <optgroup label="AI Image">
+        <option value="flux">Flux</option>
+        <option value="stabilityai">StabilityAI</option>
+        <option value="stable-diffusion">Stable Diffusion</option>
+        <option value="faceswap">Face Swap</option>
+        <option value="text2imgnfws">Text → Image (NSFW)</option>
+        <option value="magicstudio">Magic Studio</option>
+      </optgroup>
+      <optgroup label="AI Video">
+        <option value="texttovideo">Text → Video</option>
+      </optgroup>
+      <optgroup label="AI Tools">
+        <option value="describeimage">Describe Image</option>
+        <option value="nik-checker">NIK Checker</option>
+      </optgroup>
+      <optgroup label="Downloader">
+        <option value="aio">All-in-One Downloader</option>
+        <option value="skiplink">Skip Link</option>
+      </optgroup>
+      <optgroup label="Maker">
+        <option value="figure">Figure Maker</option>
+        <option value="yapping">Yapping</option>
+        <option value="fakechatfb">Fake Chat FB</option>
+        <option value="logomaker">Logo Maker</option>
+        <option value="iqc">IQC Maker</option>
+      </optgroup>
+      <optgroup label="NSFW">
+        <option value="thehentai-search">The Hentai Search</option>
+      </optgroup>
+    </select>
+
+    <div id="dynamic-inputs"><input type="text" id="prompt" placeholder="Masukkan input"></div>
+
+    <button onclick="generate()">🚀 Proses</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <div class="label">© Hzzny</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
